@@ -94,3 +94,9 @@ button:hover {
   margin: 8px 0;
   color: #555;
 }
+.leader {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #28a745; 
+  font-weight: bold;
+}
