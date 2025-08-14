@@ -1,38 +1,96 @@
-.App {
+/* App.css */
+
+/* Apply a nice font and center the content */
+body {
+  font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heading style */
+h1 {
+  margin-top: 20px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container for all languages */
+.Languages {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Each language card */
+.language {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.language:hover {
+  transform: scale(1.05);
+}
+
+/* Vote count style */
+.voteCount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Language name style */
+.languageName {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Button style */
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  border: none;
   color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
+}
+.results {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.results h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.results li {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #555;
 }
